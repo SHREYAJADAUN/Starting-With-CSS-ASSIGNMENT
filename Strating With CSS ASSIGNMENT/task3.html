@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Custom Color Palette */
+        input[type="text"] {
+            background-color: #f9eaea; /* Light Red */
+        }
+
+        input[type="email"] {
+            background-color: #eaf9ea; /* Light Green */
+        }
+
+        select {
+            background-color: #eaf2f9; /* Light Blue */
+        }
+
+        textarea {
+            background-color: #f4eaf9; /* Light Purple */
+        }
+
+        input[type="submit"] {
+            background-color: #3498db; /* Blue */
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Applying Opacity to a Form Section */
+        .opacity-section {
+            opacity: 0.8;
+        }
+        h1{
+            text-align: top;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Applying Opacity to this Section -->
+        <div class="opacity-section">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

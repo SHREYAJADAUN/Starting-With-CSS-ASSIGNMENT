@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style> 
+        /* Using the BEM naming convention to design a Card */ 
+          
+        /* The Block follows the naming convention as: .card */ 
+        .card { 
+            background-color: rgb(237, 253, 92); 
+            border-radius: 8px; 
+            width: 100%; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            margin: 100px auto; 
+            box-shadow: 0px 2px 5px 2px #aaaaaa; 
+            padding: 1rem; 
+        } 
+          
+          
+        /* The Elements follow the naming convention  
+        mentioned as: .block__element */ 
+          
+        .card__content { 
+            padding: 16px; 
+        } 
+          
+        .card__title { 
+            font-size: 30px; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+        } 
+        .card__title2 {
+           font-size: 30px;
+
+        }
+          
+        .card__text { 
+            font-size: 20px; 
+            color: gray; 
+            text-align: center; 
+        } 
+        .card__text2{
+            font: size 20px; 
+            color: blueviolet;
+            text-align: center;
+        }
+          .card__text3{
+            font-size: 20px;
+            color: crimson;
+            text-align: center;
+          }
+        .card__button { 
+            background-color: white; 
+            color: black; 
+            border-radius: 4px; 
+            padding: 10px; 
+            text-transform: uppercase; 
+            margin: 10px; 
+            cursor: pointer; 
+            box-shadow: 0px 2px 5px 2px #aaaaaa; 
+            font-weight: bold; 
+        } 
+          
+          
+        /* The Modifiers follow the naming convention  
+        mentioned as: .block__element--modifier */ 
+          
+        .card__button--primary { 
+            background-color: blue; 
+            margin: 10px; 
+            cursor: pointer; 
+        } 
+    </style> 
+    <title> BEM </title>
+  
+</head> 
+  
+<body> 
+  
+    <div class="card"> 
+        <div class="card__content"> 
+            <h2 class="card__title">BEM CONVENTION</h2> 
+            <p class="card__text">When working on a large-scale web development project, it’s essential to have a consistent and 
+                organized approach for styling. The BEM (Block-Element-Modifier) naming standard is one well-liked way to accomplish 
+                this. <br> The term BEM stands for Block-Element-Modifier, which is a naming convention for CSS class names that 
+                helps to maintain a clear and consistent structure in a project’s styling.  <br>
+                In this article, we’ll take a closer look at BEM.</p> 
+            <p class="card__text2" >  The BEM Convention: BEM uses block, element, and modifier names to construct CSS class names, 
+                    separated by double underscores (__) and hyphens (-). <br> It is based on the idea of breaking down a web page into 
+                    smaller, reusable blocks of code. <br> Each block consists of elements and modifiers that can be used to create
+                     variations of that block.  <br>This approach makes it easy to understand the purpose of each class and how they
+                      relate to each other. <br>
+                     It allows developers to quickly understand the structure of a project’s styling and make changes effectively. <br></p>
+            <h2 class="card__title2">Ways To Implement BEM </h2>
+                     <p class="card__text3">
+                        1. Start by defining the block: A block should be represented by a single CSS class and should be prefixed with the block name, such as “header”, “button”, or “form”. <br>
+                        2. Identify the elements within the block: The elements are the parts of the block that make it up. Elements should be represented by a single CSS class and should be prefixed with the block name, followed by two underscores, and then the element name, such as “header_logo”. <br>
+                        3. Define the modifiers: Modifiers should be represented by a single CSS class and should be prefixed with the block or element name, followed by two dashes, and then the modifier name, such as “button–primary”. <br>
+                       4. Apply the BEM naming convention to your CSS classes: Once you’ve defined your blocks, elements, and modifiers, you should apply the BEM naming convention to your CSS classes. <br>
+                       5. Use the BEM classes in your HTML: Once you’ve defined your BEM classes, you should use them in your HTML to apply the appropriate styles to your elements. You should use the block class on the top-level element, the element class on the child elements, and the modifier class on any elements that need to be modified. <br>
+                       6. Keep the structure consistent: Be consistent with the structure and conventions you have chosen throughout your project, it will make it easier for other developers to understand and work with the codebase.  <br>
+                        7.Reuse the classes: Reuse the classes as much as possible to keep consistency in the design and to reduce the amount of code. <br> </p>
+        
+                    </div> 
+        <button class="card__button">Button</button> 
+        <button class="card__button card__button--primary"> 
+            Primary Button 
+        </button> 
+    </div> 
+</body> 
+  
+</html> 

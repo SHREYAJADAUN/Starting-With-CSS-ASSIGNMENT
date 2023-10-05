@@ -1,0 +1,10 @@
+ .external {
+   background-color: orange;
+   border: 2px solid black;
+   margin-top: 5px;
+
+  }
+ .external h2 {
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
